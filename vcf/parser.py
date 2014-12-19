@@ -543,7 +543,7 @@ class Reader(object):
         pos = int(row[1])
 
         if row[2] != '.':
-            ID = row[2]
+            ID = row[2].split(';')
         else:
             ID = None
 
